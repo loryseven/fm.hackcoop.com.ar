@@ -1,0 +1,46 @@
+<icecast>
+    <limits>
+        <clients>10</clients>
+        <sources>5</sources>
+    </limits>
+
+    <authentication>
+        <source-password>hackme</source-password>
+        <relay-password>hackme</relay-password>
+    </authentication>
+
+    <paths>
+        <logdir>/home/moteado/.local/log/icecast2</logdir>
+        <basedir>/home/moteado/.local/share/icecast2</basedir>
+        <webroot>/home/moteado/.local/share/icecast2/web</webroot>
+        <alias source="/" dest="/status.xsl"/>
+    </paths>
+
+   <directory>
+        <yp-url-timeout>15</yp-url-timeout>
+        <yp-url>http://dir.xiph.org/cgi-bin/yp.php</yp-url>
+    </directory>
+
+    <hostname>anastasia.local</hostname>
+    <listen-socket>
+        <port>8000</port>
+    </listen-socket>
+
+    <!-- relay de hackcoop -->
+    <master-server>medieval.local</master-server>
+    <master-server-port>8000</master-server-port>
+    <master-update-interval>10</master-update-interval>
+    <master-password>hackme</master-password>
+   <master-relay-auth>1</master-relay-auth>
+<!-- 
+    <master-redirect>1</master-redirect>
+    <relays-on-demand>1</relays-on-demand>
+ -->
+
+
+    <location>LibreVPN</location>
+    <admin>moteado@anastasia.local</admin>
+    <fileserve>1</fileserve>
+    <server-id>icecast 2.3</server-id>
+    <chat>icecast 2.3</chat>
+</icecast>
