@@ -101,21 +101,23 @@
 
 <div class="row">
         <div class="span6">
-                <video src="{@mount}" controls="controls" width="400" height="300" type="application/ogg" poster="poster{@mount}.png" ></video>
+                <!-- http://www.w3schools.com/html5/html5_ref_eventattributes.asp -->
+                <!-- el evento onoffline levanta la recepcion si se cae -->
+                <video src="{@mount}" controls="controls" width="400" height="300" autobuffer="autobuffer" type="application/ogg" poster="poster{@mount}.png" onpause="this.src=this.src+'?'+Math.random();" ></video>
            <div class="icons btn-group pull-center" style="font-size: 16px" >
                 <!-- chat y sociales -->
 
 
-                <a href="http://localhost:8337/?channels={@mount}" class="btn" onclick="CrearChat('{@mount}'); return false;" >
+                <a href="#" class="btn" onclick="CrearChat('{@mount}'); return false;" >
                         <i class="icon-comments-alt"></i> Chat
                 </a>
                 <a href="#" class="btn" onclick="Comentario('{@mount}'); return false;">
                         <i class="icon-pencil"></i> Comentario
                 </a>
-                <a href="embebido.xsl" class="donaciones fancybox.ajax btn" >
-                        <i class="icon-signin"></i> Embebido
+                <a href="embebido.xsl" class="popup fancybox.ajax btn" >
+                        <i class="icon-group"></i> Compartir
                 </a>
-                <a href="donaciones.xsl#{@mount}" class="donaciones fancybox.ajax btn" >
+                <a href="donaciones.xsl#{@mount}" class="popup fancybox.ajax btn" >
                         <i class="icon-heart"></i> Donación
                 </a>
            </div>     
@@ -155,9 +157,6 @@
                         <ol>
                                 <xsl:value-of select="@mount" />
                         </ol>
-                        <script type="text/javascript">
-                                 loadfile("libertatia", "js");
-                        </script>
                 </div>
         </div>
 </div>

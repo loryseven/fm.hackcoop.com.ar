@@ -36,29 +36,33 @@
 <!--mount point stats-->
 
 <div class="container" id="contenido">
+           <form method="get" action="archive.org.xsl" >
+                        <span class="input-prepend pull-right" id=" tipo" >
+                                <a class="add-on icon-facetime-video" onclick="buscar($('#q').val(), 'movies');"></a>
+                                <a class="add-on icon-music" onclick="buscar($('#q').val(), 'audio');"></a>
+                                <a class="add-on icon-picture" onclick="buscar($('#q').val(), 'images');"></a>
+                                <a class="add-on icon-file" onclick="buscar($('#q').val(), 'texts');"></a>
+                                <input class="span2" type="search" name="q" id="q" placeholder="Buscar" />
+                        </span>
+           </form>
 
-<div style="text-align: right; font-size: 24px;" id="tipo" >
-        <a class="icon-facetime-video" onclick="location.href = location.href + ' AND mediatype:movies'"></a> \
-        <a class="icon-volume-down" onclick="location.href = location.href + ' AND mediatype:audio'"></a> \
-        <a class="icon-picture" onclick="location.href = location.href + ' AND mediatype:image'"></a> \
-        <a class="icon-file" onclick="location.href = location.href + ' AND mediatype:texts'"></a> \
-        <a class="icon-save" onclick="location.href = location.href + ' AND mediatype:software'"></a>
-</div>
+<br />
 <div class="well">
 
 <h1><div id="titulo"></div></h1>
 <div class="row">
         <div class="span6">
                 <div id="video"></div>
-                <!--                -->
-
+                <!--                
+                        -->
                 <div class="icons btn-group pull-center" style="font-size: 16px">
                         <a href="http://{@mount}:8337/?channels=merdalab" class="btn" onclick="CrearChat('merdalab'); return false;"><i class="icon-comments-alt"></i> Chat
                         </a><a href="archive.org_comentario.xsl" class="btn donaciones fancybox.ajax" ><i class="icon-pencil"></i> Comentario
-                        </a><a href="embebido.xsl" class="donaciones fancybox.ajax btn"><i class="icon-signin"></i> Embebido
+                        </a><a href="embebido.xsl" class="donaciones fancybox.ajax btn"><i class="icon-group"></i> Compartir
                         </a>
                         <a href="donaciones.xsl#merdalab" class="donaciones fancybox.ajax btn"><i class="icon-heart"></i> Donación</a>
                 </div>
+
         </div>
         <div class="span5">
                 <h3>Descripción</h3>
@@ -72,6 +76,7 @@
         </div>
 </div>
 </div>
+
 <footer>
         <div class="row">
                 <div class="span8">
@@ -103,7 +108,6 @@
 </footer>
 </div>
         <script src="js/archive.org.js"></script>
-
 </body>
 </html>
 </xsl:template>

@@ -23,9 +23,8 @@ function Comentario (id) {
 
 
 //----------------------------------------
-
 $(document).ready(function() {
-        $(".fancybox").fancybox({
+         $(".fancybox").fancybox({
                 maxWidth        : 800,
                 maxHeight       : 600,
                 fitToView       : false,
@@ -37,7 +36,7 @@ $(document).ready(function() {
                 closeEffect     : 'none'
         });
 
-        $(".donaciones").fancybox({
+        $(".popup").fancybox({
                 maxWidth        : 500,
                 maxHeight       : 400,
                 fitToView       : false,
@@ -48,6 +47,11 @@ $(document).ready(function() {
                 openEffect      : 'none',
                 closeEffect     : 'none'
         });
+
+        $(".span5 ol").each(function(index) {
+                        loadfile($(this).text(), "js");
+        });
+
 });
 
 //------------------ Mediateca --------------------
@@ -55,8 +59,11 @@ $(document).ready(function() {
 //-------------------- leer JS --------------------
 
 function loadfile(filename, filetype){
+        
+        // repara la URL
+        filename = filename.replace(".ogg", "").replace("/","");
+        filename = "http://archive.org/advancedsearch.php?q="+filename+"&output=json&callback=callback&rows=100";
 
-        filename = "http://archive.org/advancedsearch.php?q="+filename+"&output=json&callback=callback";
         if (filetype=="js"){
                 var fileref=document.createElement('script') ;
                 fileref.setAttribute("type","text/javascript") ;
@@ -76,6 +83,9 @@ function callback (id) {
     // http://archive.org/help/example.js
     // http://archive.org/details/FrankenberryCountChoculaTevevisionCommercial1971&output=json&callback=IAE.favorite
 
+
+    // Articulos recomendados
+
     str ="<ol>";
     for (var hit,i=0; hit=id.response.docs[i]; i++) {
         //------------
@@ -94,12 +104,22 @@ function callback (id) {
     }
     str +="</ol>";
 
-    id = id.responseHeader.params.qin;    // palabra clave buscada
+    // palabra clave buscada
+    canal = id.responseHeader.params.qin.replace(/\ .*/, '').replace(' ','');
+    if (id.response.docs.length == 0) loadfile(canal + "%20OR%20Tex%20Avery","js");
+                                                // canal recomendado
+       
     $(".span5 ol").each(function(index) {
-               if ($(this).html().indexOf(id) > -1) {
+               if ($(this).html().indexOf(canal) > -1) {
                         archivo = $(this).html(str);
                 } 
     });
 
 
 }
+
+// buscar
+function buscar (texto, tipo) {
+        location.href = '/archive.org.xsl?q=' + texto + ' AND mediatype:' + tipo;
+}
+
