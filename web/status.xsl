@@ -32,7 +32,11 @@
 <script type="text/javascript" src="js/kaltura.js"></script>
 <![endif]-->
 
-
+<style>
+video {
+        background: url(poster/404.png);
+}
+</style>
 </head>
 
 
@@ -54,7 +58,6 @@
 <!--end index header menu -->
 <!--mount point stats-->
 
-        
 <div class="container" id="contenido">
 
            <form method="get" action="archive.org.xsl" >
@@ -221,8 +224,6 @@
         </div>
 </footer>
 </div>
-
-
 </body>
 </html>
 </xsl:template>
