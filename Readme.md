@@ -3,11 +3,11 @@ Icecast MerdaLab
 
 Interfase interactiva para icecast, en la que se puede reproducir las transmisiones de modo directo en la 
 portada del icecast y escuchar transmisiones viejas almacenadas en [Internet Archive](https://archive.org), 
-a la vez se puede buscar contenido en esta pagina
+a la vez se puede buscar contenido en esta pagina.
+Actualmente esta versión esta disponible en [fm.hackcoop.com.ar](http://fm.hackcoop.com.ar) 
+
 
 ![Portada](http://ompldr.org/vZmh5ag/jcr-icecast-merdalab.png)
-
-Actualmente esta versión esta disponible en [fm.hackcoop.com.ar](http://fm.hackcoop.com.ar) 
 
 
 Este desarrollo esta pensado para funcionar dentro de la [LibreVPN](http://librevpn.org.ar), aunque puede 
