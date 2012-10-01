@@ -1,8 +1,8 @@
 Icecast MerdaLab
 ================
 
-Interfase interactiva para icecast, mejora el aspecto del icecast para que funcione de un modo mucho más  
-dinámico, pudiéndose escuchar y ver radios y vídeos online, viejas trasmisiones almacenadas en archive.org
+Interfase interactiva para icecast, en la que se puede reproducir las transmisiones de modo directo en la 
+portada del icecast y escuchar transmisiones viejas almacenadas en archive.org
 
 Actualmente esta versión esta disponible en [fm.hackcoop.com.ar](http://fm.hackcoop.com.ar)
 
