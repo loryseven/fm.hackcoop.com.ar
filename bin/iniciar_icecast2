@@ -4,7 +4,7 @@
 #
 #       requiere: libnotify-bin
 
-cd
+cd $HOME
 icecast2 -c /home/moteado/.local/share/icecast2/icecast.xml | while read LINEA; do
         notify-send $LINEA -i $HOME/.local/share/icecast2/web/img/icecast.png
 done

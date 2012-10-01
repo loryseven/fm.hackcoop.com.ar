@@ -13,7 +13,10 @@ echo "Media ({" > lista.js
 
 # enlistar archivo que no estan con fechas
 ls | grep "..-..-.." | while read ARCHIVO; do
-        echo "{archivo:'$ARCHIVO', nombre: '', descripcion:'', url:''}," >> lista.js
+        #NOMBRE=
+        #DESCRIPCION
+        #URL
+        echo "{archivo:'$ARCHIVO', nombre: '$NOMBRE', descripcion:'$DESCRIPCION', url:'$URL'}," >> lista.js
 done
 
 echo "{}});" >> lista.js
@@ -24,4 +27,3 @@ Quehaceres:
 
         - Descripción (sacarla del metadato)
         - hacerlo mas lindo
-
