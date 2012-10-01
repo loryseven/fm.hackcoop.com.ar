@@ -1,15 +1,19 @@
 <icecast>
+    <!-- por defecto es para una red local -->
     <limits>
         <clients>10</clients>
         <sources>5</sources>
     </limits>
 
     <authentication>
+        <!-- clave para transmitir -->
         <source-password>hackme</source-password>
+        <!-- clave para que te retransmitan-->
         <relay-password>hackme</relay-password>
     </authentication>
 
     <paths>
+        <!-- logs, solo funciona si se lo ejecuta en el home -->
         <logdir>.local/log/icecast2</logdir>
         <basedir>.local/share/icecast2</basedir>
         <webroot>.local/share/icecast2/web</webroot>
@@ -17,6 +21,7 @@
     </paths>
 
    <directory>
+        <!-- anuncio en el directorio oficial de icecast -->
         <yp-url-timeout>15</yp-url-timeout>
         <yp-url>http://dir.xiph.org/cgi-bin/yp.php</yp-url>
     </directory>
@@ -49,6 +54,7 @@
     <master-password>hackme</master-password>
     <master-relay-auth>1</master-relay-auth>
 
+    <!-- datos del icecast -->
 
     <location>LibreVPN</location>
     <!-- cambialo por tu nombre -->
