@@ -8,5 +8,9 @@ dinámico, pudiéndose escuchar y ver radios y vídeos online, viejas trasmision
 Quehaceres
 ----------
 
+- Comentarios
+- Integrar con el proyecto web-irc
+- Enlistar archivos del "archivo"
+- Generar publicador automatico de archive.org 
 - Mejorar plantillas
 - Usar de servidor web (convencional)
