@@ -10,6 +10,8 @@ a la vez se puede buscar contenido en esta pagina
 Actualmente esta versión esta disponible en [fm.hackcoop.com.ar](http://fm.hackcoop.com.ar) 
 
 
+Este desarrollo esta pensado para funcionar dentro de la [LibreVPN](http://librevpn.org.ar), aunque puede 
+funcionar de modo totalmente independiente, 
 [Pagina de Desarrollo](http://lab.hackcoop.com.ar/projects/merdalab/wiki)
 
 
