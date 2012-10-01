@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+#       generar una lista de archivos que se puede importar en javascript
+#
+
+# agregar binarios personalizados
+export PATH="$PATH:$HOME/bin:$HOME/.local/share/icecast2/bin"
+
+# ir al archivo
+cd $HOME/.local/share/icecast2/web/archivo/
+
+echo "Media ({" > lista.js
+
+# enlistar archivo que no estan con fechas
+ls | grep "..-..-.." | while read ARCHIVO; do
+        echo "{archivo:'$ARCHIVO', nombre: '', descripcion:'', url:''}," >> lista.js
+done
+
+echo "{}});" >> lista.js
+
+exit
+
+Quehaceres:
+
+        - Descripción (sacarla del metadato)
+        - hacerlo mas lindo
+

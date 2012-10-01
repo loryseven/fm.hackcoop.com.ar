@@ -10,9 +10,9 @@
     </authentication>
 
     <paths>
-        <logdir>/home/moteado/.local/log/icecast2</logdir>
-        <basedir>/home/moteado/.local/share/icecast2</basedir>
-        <webroot>/home/moteado/.local/share/icecast2/web</webroot>
+        <logdir>.local/log/icecast2</logdir>
+        <basedir>.local/share/icecast2</basedir>
+        <webroot>.local/share/icecast2/web</webroot>
         <alias source="/" dest="/status.xsl"/>
     </paths>
 
@@ -25,6 +25,16 @@
     <listen-socket>
         <port>8000</port>
     </listen-socket>
+
+   <!-- puntos de montaje -->
+   <mount>
+        <!-- nombre -->
+        <mount-name>/Realaradio.ogg</mount-name>
+        <!-- guardar archivo -->
+        <dump-file>.local/share/icecast2/web/archivo/Realaradio.ogg</dump-file>
+        <!-- al desconectarse ejecuta el archivador -->
+        <on-disconnect>.local/share/icecast2/bin/archivar</on-disconnect>
+   </mount>
 
     <!-- relay de hackcoop -->
     <master-server>medieval.local</master-server>

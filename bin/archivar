@@ -1,0 +1,38 @@
+#!/bin/bash
+#
+#       sube un archivo a una nube xq en la maquina hay poco espacio
+#
+
+# agregar binarios personalizados
+export PATH="$PATH:$HOME/bin:$HOME/.local/share/icecast2/bin"
+
+# ir al archivo
+cd $HOME/.local/share/icecast2/web/archivo/
+
+PID=$(pidof icecast2)
+TEMA="$(lsof -p $PID)"
+
+# enlistar archivo que no estan con fechas
+ls | grep -v "..-..-.." | grep "\.og."| while read ARCHIVO; do
+        # verificar que no este el archivo en uso
+        CONTENIDO=$(echo $TEMA | grep $ARCHIVO)
+        if [ ! "$TEMA" == "$CONTENIDO" ];then
+                # si el archivo no esta siendo usado por icecast
+                # se lo renombra con la fecha actual poniendole la fecha
+                # base del nombre
+                BASE=$(basename $ARCHIVO | sed 's/\..*$//g')
+                # extension
+                EXT=$(basename $ARCHIVO | sed 's/^.*\.//g')
+                NOMBRENUEVO="$BASE-$(date +%Y-%m-%d_%H-%M-%S).$EXT"
+                mv $ARCHIVO $NOMBRENUEVO
+                echo "Archivando $NOMBRENUEVO"
+        fi
+done
+
+archivo2json
+
+exit
+
+el archivo termina teniendo la fecha actual en lugar de su nombre simple,
+en el caso de tener poco espacio en el disco rigido puede ponerse que
+se suba el archivo a archive.org
