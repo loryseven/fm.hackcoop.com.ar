@@ -21,7 +21,6 @@
         <yp-url>http://dir.xiph.org/cgi-bin/yp.php</yp-url>
     </directory>
 
-    <hostname>anastasia.local</hostname>
     <listen-socket>
         <port>8000</port>
     </listen-socket>
@@ -41,16 +40,18 @@
     <master-server-port>8000</master-server-port>
     <master-update-interval>10</master-update-interval>
     <master-password>hackme</master-password>
-   <master-relay-auth>1</master-relay-auth>
-<!-- 
-    <master-redirect>1</master-redirect>
-    <relays-on-demand>1</relays-on-demand>
- -->
+    <master-relay-auth>1</master-relay-auth>
+
+    <!-- relay de anastasia -->
+    <master-server>anastasia.local</master-server>
+    <master-server-port>8000</master-server-port>
+    <master-update-interval>10</master-update-interval>
+    <master-password>hackme</master-password>
+    <master-relay-auth>1</master-relay-auth>
 
 
     <location>LibreVPN</location>
+    <!-- cambialo por tu nombre -->
     <admin>moteado@anastasia.local</admin>
     <fileserve>1</fileserve>
-    <server-id>icecast 2.3</server-id>
-    <chat>icecast 2.3</chat>
 </icecast>
