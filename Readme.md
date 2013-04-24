@@ -11,8 +11,7 @@ Actualmente esta versión esta disponible en [fm.hackcoop.com.ar](http://fm.hack
 ![Portada](http://ompldr.org/vZmh5ag/jcr-icecast-merdalab.png)
 
 
-Este desarrollo esta pensado para funcionar dentro de la [LibreVPN](http://librevpn.org.ar), aunque puede 
-funcionar de modo totalmente independiente, [Pagina de Desarrollo](http://lab.hackcoop.com.ar/projects/merdalab/wiki)
+[Pagina de Desarrollo](http://lab.hackcoop.com.ar/projects/merdalab/wiki)
 
 Icecast.xml
 -----------
@@ -37,7 +36,7 @@ Puede ocurrir que durante microcortes se generen pequeños archivos que hay que 
     <admin>moteado@anastasia.local</admin>
 </pre>
 
-En este caso es una dirección dentro de LibreVPN, pero podes poner lo que se te ocurra.
+En este caso es una dirección dentro de [LibreVPN](http://librevpn.org.ar), pero podes poner lo que se te ocurra.
 
 Quehaceres
 ----------
