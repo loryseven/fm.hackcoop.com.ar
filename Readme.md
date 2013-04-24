@@ -14,10 +14,36 @@ Actualmente esta versión esta disponible en [fm.hackcoop.com.ar](http://fm.hack
 Este desarrollo esta pensado para funcionar dentro de la [LibreVPN](http://librevpn.org.ar), aunque puede 
 funcionar de modo totalmente independiente, [Pagina de Desarrollo](http://lab.hackcoop.com.ar/projects/merdalab/wiki)
 
+Icecast.xml
+-----------
+
+### Almacenamiento de programas emitidos
+
+Al terminar cada emisión de radio se hace un archivo del programa y [se comparte en Archive.org](http://fm.hackcoop.com.ar/archive.org.xsl#Realaradio)
+
+<pre>
+   <mount>
+        <mount-name>/Realaradio.ogg</mount-name>
+        <dump-file>.local/share/icecast2/web/archivo/Realaradio.ogg</dump-file>
+        <on-disconnect>.local/share/icecast2/bin/archivar</on-disconnect>
+   </mount>
+</pre>
+
+En el ejemplo la estación de radio `/Realaradio.ogg` tiene que cambiar por tu punto de montaje. 
+Puede ocurrir que durante microcortes se generen pequeños archivos que hay que borrar a mano :(
+
+### Nombre del que mantiene el icecast
+<pre>
+    <admin>moteado@anastasia.local</admin>
+</pre>
+
+En este caso es una dirección dentro de LibreVPN, pero podes poner lo que se te ocurra.
 
 Quehaceres
 ----------
 
+- Eliminar archivos muy pequeños antes de archivarlos
+- Anuncio de los archivos archivados de modo local
 - Integrar a wordpress feed y comentarios
 - Generar publicador automático de archive.org
 - Generar capturar para el repositorio
