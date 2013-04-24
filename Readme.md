@@ -1,17 +1,13 @@
 Icecast MerdaLab
 ================
 
-Interfase interactiva para icecast con chat en [web-irc](https://github.com/b4zz4/web-irc), 
-en la que se puede reproducir las transmisiones de modo directo en la portada del icecast 
-y escuchar transmisiones viejas almacenadas en [Internet Archive](https://archive.org), 
-a la vez se puede buscar contenido en esta pagina.
-Actualmente esta versión esta disponible en [fm.hackcoop.com.ar](http://fm.hackcoop.com.ar) 
-
+Interfase multimedia en la que se puede reproducir las transmisiones de modo directo en la lista de transmisiones.
+Escuchar transmisiones viejas almacenadas o buscar contenido en [Internet Archive](https://archive.org).
+Y chatear usando [web-irc](https://github.com/b4zz4/web-irc)
 
 ![Portada](http://ompldr.org/vZmh5ag/jcr-icecast-merdalab.png)
 
-
-[Pagina de Desarrollo](http://lab.hackcoop.com.ar/projects/merdalab/wiki)
+Actualmente esta versión esta disponible en [fm.hackcoop.com.ar](http://fm.hackcoop.com.ar). [Pagina de Desarrollo](http://lab.hackcoop.com.ar/projects/merdalab/wiki)
 
 Icecast.xml
 -----------
@@ -33,7 +29,9 @@ Puede ocurrir que durante microcortes se generen pequeños archivos que hay que 
 
 ### Nombre del que mantiene el icecast
 
-`<admin>moteado@anastasia.local</admin>`
+<pre>
+&lt;admin&gt;moteado@anastasia.local&lt;/admin&gt;
+<pre>
 
 En este caso es una dirección dentro de [LibreVPN](http://librevpn.org.ar), pero podes poner lo que se te ocurra.
 
