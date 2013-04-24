@@ -21,11 +21,11 @@ Icecast.xml
 Al terminar cada emisión de radio se hace un archivo del programa y [se comparte en Archive.org](http://fm.hackcoop.com.ar/archive.org.xsl#Realaradio)
 
 <pre>
-   <mount>
-        <mount-name>/Realaradio.ogg</mount-name>
-        <dump-file>.local/share/icecast2/web/archivo/Realaradio.ogg</dump-file>
-        <on-disconnect>.local/share/icecast2/bin/archivar</on-disconnect>
-   </mount>
+   \<mount\>
+        \<mount-name\>/Realaradio.ogg\</mount-name\>
+        \<dump-file\>.local/share/icecast2/web/archivo/Realaradio.ogg\</dump-file\>
+        \<on-disconnect\>.local/share/icecast2/bin/archivar\</on-disconnect\>
+   \</mount\>
 </pre>
 
 En el ejemplo la estación de radio `/Realaradio.ogg` tiene que cambiar por tu punto de montaje. 
