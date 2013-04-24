@@ -1,20 +1,21 @@
 Icecast MerdaLab
 ================
 
-Interfase multimedia en la que se puede reproducir las transmisiones de modo directo en la lista de transmisiones.
-Escuchar transmisiones viejas almacenadas o buscar contenido en [Internet Archive](https://archive.org).
-Y chatear usando [web-irc](https://github.com/b4zz4/web-irc)
+Interfaz multimedia e interactiva en la que se anuncian la lista de estaciones disponibles,
+escuchar los programas en vivo, como programas ya emitidos, [chatear](https://github.com/b4zz4/web-irc) con los ollentes 
+y buscar contenido en [Internet Archive](https://archive.org).
 
 ![Portada](http://ompldr.org/vZmh5ag/jcr-icecast-merdalab.png)
 
-Actualmente esta versión esta disponible en [fm.hackcoop.com.ar](http://fm.hackcoop.com.ar). [Pagina de Desarrollo](http://lab.hackcoop.com.ar/projects/merdalab/wiki)
+Actualmente esta versión esta siendo usada en [fm.hackcoop.com.ar](http://fm.hackcoop.com.ar).
+Ver la [Pagina de Desarrollo](http://lab.hackcoop.com.ar/projects/merdalab/wiki)
 
 Icecast.xml
 -----------
 
 ### Almacenamiento de programas emitidos
 
-Al terminar cada emisión de radio se hace un archivo del programa y [se comparte en Archive.org](http://fm.hackcoop.com.ar/archive.org.xsl#Realaradio)
+Al terminar cada emisión de radio se hace un archivo del programa y [se comparte](http://fm.hackcoop.com.ar/archive.org.xsl#Realaradio) en Archive.org
 
 <pre>
 &lt;mount&gt;
@@ -31,15 +32,14 @@ Puede ocurrir que durante microcortes se generen pequeños archivos que hay que 
 
 <pre>
 &lt;admin&gt;moteado@anastasia.local&lt;/admin&gt;
-<pre>
+</pre>
 
 En este caso es una dirección dentro de [LibreVPN](http://librevpn.org.ar), pero podes poner lo que se te ocurra.
 
 Quehaceres
 ----------
 
-- Eliminar archivos muy pequeños antes de archivarlos
+- Generar capturar para el repositorio
+- Eliminar archivos muy pequeños (errores) antes de archivarlos
 - Anuncio de los archivos archivados de modo local
 - Integrar a wordpress feed y comentarios
-- Generar publicador automático de archive.org
-- Generar capturar para el repositorio
