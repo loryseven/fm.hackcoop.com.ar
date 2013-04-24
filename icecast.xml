@@ -30,7 +30,7 @@
         <port>8000</port>
     </listen-socket>
 
-   <!-- puntos de montaje -->
+   <!-- puntos de montaje  que se desea almacenar y/o enviar a archive.org -->
    <mount>
         <!-- nombre -->
         <mount-name>/Realaradio.ogg</mount-name>
@@ -39,27 +39,6 @@
         <!-- al desconectarse ejecuta el archivador -->
         <on-disconnect>.local/share/icecast2/bin/archivar</on-disconnect>
    </mount>
-
-    <!-- relay de hackcoop -->
-    <master-server>medieval.local</master-server>
-    <master-server-port>8000</master-server-port>
-    <master-update-interval>10</master-update-interval>
-    <master-password>hackme</master-password>
-    <master-relay-auth>1</master-relay-auth>
-
-    <!-- relay de anastasia -->
-    <master-server>anastasia.local</master-server>
-    <master-server-port>8000</master-server-port>
-    <master-update-interval>10</master-update-interval>
-    <master-password>hackme</master-password>
-    <master-relay-auth>1</master-relay-auth>
-
-    <!-- relay de morgana -->
-    <master-server>morgana.local</master-server>
-    <master-server-port>8000</master-server-port>
-    <master-update-interval>10</master-update-interval>
-    <master-password>hackme</master-password>
-    <master-relay-auth>1</master-relay-auth>
 
     <!-- datos del icecast -->
 
