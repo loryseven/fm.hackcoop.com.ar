@@ -1,14 +1,11 @@
 fm.hackcoop.com.ar
 ==================
 
-Interfaz multimedia e interactiva en la que se anuncian la lista de estaciones disponibles,
+Interface multimedia e interactiva en la que se anuncian la lista de estaciones disponibles,
 escuchar los programas en vivo, como programas ya emitidos, [chatear](https://github.com/b4zz4/web-irc) con los ollentes 
-y buscar contenido en [Internet Archive](https://archive.org).
+y buscar contenido en [Internet Archive](https://archive.org). Ver la pagina de la [Desarrollo](http://lab.hackcoop.com.ar/projects/merdalab/wiki)
 
 ![Portada](http://ompldr.org/vZmh5ag/jcr-icecast-merdalab.png)
-
-Actualmente esta versión esta siendo usada en [fm.hackcoop.com.ar](http://fm.hackcoop.com.ar).
-Ver la [Pagina de Desarrollo](http://lab.hackcoop.com.ar/projects/merdalab/wiki)
 
 Icecast.xml
 -----------
