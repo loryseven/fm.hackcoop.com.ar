@@ -8,11 +8,13 @@
         <meta name="description" content="Multimedia, video y audio" />
         <meta name="author" content="Ernesto Bazzano (c) HackLab de Barracas" />
 
+	<link rel="icon" href="/favicon.png" />
         <link href="http://lab.hackcoop.com.ar/projects/juan-carlos-radio/activity.atom?show_wiki_edits=1" rel="alternate" title="ATOM" type="application/atom+xml" />
 
         <link rel="stylesheet" type="text/css" href="assets/css/site.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
         <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" />
+
         <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/video-default.css" rel="stylesheet" />
 
