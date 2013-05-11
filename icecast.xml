@@ -30,7 +30,7 @@
         <port>8000</port>
     </listen-socket>
 
-   <!-- puntos de montaje -->
+   <!-- puntos de montaje  que se desea almacenar y/o enviar a archive.org -->
    <mount>
         <!-- nombre -->
         <mount-name>/Realaradio.ogg</mount-name>

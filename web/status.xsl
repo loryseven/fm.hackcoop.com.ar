@@ -4,7 +4,7 @@
 <html lang="es">
 <head>
         <meta charset="utf-8" />
-        <title>MerdaLab - Transmisiones</title>
+        <title>Juan Carlos Radio - Transmisiones</title>
         <meta name="description" content="Multimedia, video y audio" />
         <meta name="author" content="Ernesto Bazzano (c) HackLab de Barracas" />
 
@@ -13,8 +13,11 @@
         <link rel="stylesheet" type="text/css" href="assets/css/site.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
         <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" />
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/video-default.css" rel="stylesheet" />
 
-<script src="assets/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.video-ui.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
 
 <!--
 <script src="assets/js/underscore.min.js"></script>
@@ -23,17 +26,19 @@
 -->
 
 <script type="text/javascript" src="js/icecast.js"></script>
+<script type="text/javascript" >
+video = [];
+</script>
 
 <!-- Add fancyBox -->
 <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
 
 
 <!--[if IE ]>
-<script type="text/javascript" src="js/kaltura.js"></script>
 <![endif]-->
 
 <style>
-video {
+video, .mv-player {
         background: url(poster/404.png);
 }
 </style>
@@ -47,7 +52,7 @@ video {
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <h3><a class="brand" href="status.xsl"><i class="icon-cloud"></i> MerdaLab</a></h3>
+      <h3><a class="brand" href="status.xsl"><i class="icon-cloud"></i> Juan Carlos Radio</a></h3>
       <ul class="nav pull-right">
         <li><a class="nav" href="admin/">Administración <i class="icon-cogs"></i></a></li>
       </ul>
@@ -60,6 +65,22 @@ video {
 
 <div class="container" id="contenido">
 
+<!-- Invita -->
+<div class="alert alert-info">
+<div class="row">
+        <div class="span10">
+  <h3>¡Contale a tus amigos!</h3>
+  Ayudanos a difundir nuestros eventos por correo electrónico
+  <a href="http://hackcoop.com.ar/listas/invita.html" class="popup fancybox.iframe btn btn-mini" ><i class="icon-comment"></i> invitalos </a>
+	</div>
+        <div class="span1">
+                <a href="donaciones.xsl#{@mount}" class="popup fancybox.ajax btn btn-success btn-large" >
+                        <i class="icon-heart"></i> Donación
+                </a>
+	</div>
+</div>
+</div>
+
            <form method="get" action="archive.org.xsl" >
                 <div class="input-prepend pull-right">
                         <span class="add-on"><i class="icon-search"></i></span>
@@ -67,14 +88,21 @@ video {
                </div>
            </form>
 <br />
+<br />
 
 <xsl:for-each select="source">
 <xsl:choose>
 <xsl:when test="listeners">
 
+
+
+<!-- popup compartir -->
+
+		<div id="compartir{@mount}" style="display: none; width:500px;">
+			<h2>enlace: http://fm.hackcoop.com.ar/#{@mount}</h2>
+		</div>
+
 <!-- contenido -->
-
-
 
 <div class="well">
 
@@ -101,27 +129,27 @@ video {
                 <a target="_blank" href="{server_url}"><xsl:value-of select="server_url" /></a>
         </xsl:if>
 </h4>
-
 <div class="row">
         <div class="span6">
                 <!-- http://www.w3schools.com/html5/html5_ref_eventattributes.asp -->
                 <!-- el evento onoffline levanta la recepcion si se cae -->
-                <video src="{@mount}" controls="controls" width="400" height="300" autobuffer="autobuffer" type="application/ogg" poster="poster{@mount}.png" onpause="this.src=this.src+'?'+Math.random();" ></video>
-           <div class="icons btn-group pull-center" style="font-size: 16px" >
+		<div class="videoUiWrapper thumbnail" >
+				<video src="{@mount}" controls="controls" width="400" height="300" autobuffer="autobuffer" type="application/ogg" poster="poster{@mount}.png"></video>
+		</div>
+           <div class="icons btn-group" style="font-size: 16px;" >
                 <!-- chat y sociales -->
 
 
-                <a href="#" class="btn" onclick="CrearChat('{@mount}'); return false;" >
+                <a href="#" class="btn btn-link" onclick="CrearChat('{@mount}'); return false;" >
                         <i class="icon-comments-alt"></i> Chat
                 </a>
+<!--
                 <a href="#" class="btn" onclick="Comentario('{@mount}'); return false;">
                         <i class="icon-pencil"></i> Comentario
                 </a>
-                <a href="embebido.xsl" class="popup fancybox.ajax btn" >
+-->
+                <a href="#{@mount}" class="btn btn-link" onclick="alert(window.location.href+'#{@mount}');" >
                         <i class="icon-group"></i> Compartir
-                </a>
-                <a href="donaciones.xsl#{@mount}" class="popup fancybox.ajax btn" >
-                        <i class="icon-heart"></i> Donación
                 </a>
            </div>     
         </div>
@@ -194,7 +222,6 @@ video {
                         <input class="span2" type="search" name="q" id="q" placeholder="Buscar" />
                </div>
            </form>
-
 <footer>
         <div class="row">
                 <div class="span8">
@@ -223,6 +250,9 @@ video {
 
         </div>
 </footer>
+<script type="text/javascript" src="js/kaltura.js"></script>
+<!--
+-->
 </div>
 </body>
 </html>
