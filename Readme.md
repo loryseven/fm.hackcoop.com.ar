@@ -7,6 +7,15 @@ y buscar contenido en [Internet Archive](https://archive.org). Ver la pagina de 
 
 ![Portada](http://ompldr.org/vZmh5ag/jcr-icecast-merdalab.png)
 
+Instalación
+-----------
+
+~~~
+sudo cp -r web/* /etc/icecast2/web/
+sudo chown -R icecast2 /etc/icecast2/web/
+sudo chgrp -R icecast /etc/icecast2/web/
+~~~
+
 Icecast.xml
 -----------
 
@@ -14,22 +23,22 @@ Icecast.xml
 
 Al terminar cada emisión de radio se hace un archivo del programa y [se comparte](http://fm.hackcoop.com.ar/archive.org.xsl#Realaradio) en Archive.org
 
-<pre>
+~~~
 &lt;mount&gt;
    &lt;mount-name&gt;/Realaradio.ogg&lt;/mount-name&gt;
    &lt;dump-file\&gt;.local/share/icecast2/web/archivo/Realaradio.ogg&lt;/dump-file&gt;
    &lt;on-disconnect\&gt;.local/share/icecast2/bin/archivar&lt;/on-disconnect&gt;
 &lt;/mount&gt;
-</pre>
+~~~
 
 En el ejemplo la estación de radio `/Realaradio.ogg` tiene que cambiar por tu punto de montaje. 
 Puede ocurrir que durante microcortes se generen pequeños archivos que hay que borrar a mano :(
 
 ### Nombre del que mantiene el icecast
 
-<pre>
+~~~
 &lt;admin&gt;moteado@anastasia.local&lt;/admin&gt;
-</pre>
+~~~
 
 En este caso es una dirección dentro de [LibreVPN](http://librevpn.org.ar), pero podes poner lo que se te ocurra.
 
