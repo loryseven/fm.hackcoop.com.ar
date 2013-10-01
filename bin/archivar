@@ -1,13 +1,13 @@
 #!/bin/bash
 #
 #       sube un archivo a una nube xq en la maquina hay poco espacio
-#
+#	**Nota:** con inotifywait podria hacerse mas simple y rapido
 
 # agregar binarios personalizados
-export PATH="$PATH:$HOME/bin:$HOME/.local/share/icecast2/bin"
+# export PATH="$PATH:$HOME/bin:$HOME/.local/share/icecast2/bin"
 
 # ir al archivo
-cd $HOME/.local/share/icecast2/web/archivo/
+cd /tmp/
 
 PID=$(pidof icecast2)
 TEMA="$(lsof -p $PID)"
@@ -29,7 +29,7 @@ ls | grep -v "..-..-.." | grep "\.og."| while read ARCHIVO; do
         fi
 done
 
-archivo2json
+# archivo2json
 
 exit
 
