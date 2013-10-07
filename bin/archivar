@@ -1,37 +1,20 @@
 #!/bin/bash
 #
-#	Crea copias de los programas de radio
+#	renombra el ultimo volcado (dump) del programa de radio transmitido
 #	**Nota:** con inotifywait podria hacerse mas simple y rapido
 
-DIR="/home/secret/Música"
-# ir al archivo
-cd /tmp/
+# ir al archivo (esto se puede cambiar)
+cd /home/secret/Música/Radio
 
 PID=$(pidof icecast2)
-TEMA="$(lsof -p $PID)"
 
-# enlistar archivo que no estan con fechas
-ls | grep -v "..-..-.." | grep "\.og."| while read ARCHIVO; do
-        # verificar que no este el archivo en uso
-        CONTENIDO=$(echo $TEMA | grep $ARCHIVO)
-	# Nota: a veces el path es muy largo, no se si funciona perfectamente
-        if [ ! "$TEMA" == "$CONTENIDO" ];then
-                # si el archivo no esta siendo usado por icecast
-                # se lo renombra con la fecha actual poniendole la fecha
-                # base del nombre
-                BASE=$(basename $ARCHIVO | sed 's/\..*$//g')
-                # extension
-                EXT=$(basename $ARCHIVO | sed 's/^.*\.//g')
-                NOMBRENUEVO="$BASE-$(date +%Y-%m-%d_%H-%M-%S).$EXT"
-                mv $ARCHIVO "${DIR}/${NOMBRENUEVO}"
-                echo "Archivando $NOMBRENUEVO"
-        fi
+# enlistar archivos que no estan con fechas
+ls | grep -v "..-..-.." | grep "\.og." | while read ARCHIVO; do
+	# base del nombre
+	BASE=$(basename $ARCHIVO | sed 's/\..*$//g')
+        # extension
+        EXT=$(basename $ARCHIVO | sed 's/^.*\.//g')
+        NOMBRENUEVO="$BASE-$(date +%Y-%m-%d_%H-%M-%S).$EXT"
+        mv $ARCHIVO "${DIR}/${NOMBRENUEVO}"
+        echo "Archivando: $NOMBRENUEVO"
 done
-
-# archivo2json
-
-exit
-
-el archivo termina teniendo la fecha actual en lugar de su nombre simple,
-en el caso de tener poco espacio en el disco rigido puede ponerse que
-se suba el archivo a archive.org
