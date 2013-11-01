@@ -1,7 +1,6 @@
 //direcciones
-irc="irc.hackcoop.com.ar";
-icecast=window.location.port;
-host=window.location.host.replace(":"+icecast, "");
+irc="http://irc.hackcoop.com.ar";
+host=window.location.host;
 
 
 function CrearChat (id){
@@ -12,7 +11,7 @@ function CrearChat (id){
         });                    
         canal = id.replace("/","").replace(".ogg","");
         if (chat.html().indexOf("iframe") == -1) {
-                chat.html( chat.html() + '<br /><iframe src="http://' + irc + '/?channels=' + canal + '" style="border:0; background: none; scroll: none; width: 100%; height: 350px;" ></iframe>');
+                chat.html( chat.html() + '<br /><iframe src="' + irc + '/?channels=' + canal + '" style="border:0; background: none; scroll: none; width: 100%; height: 350px;" ></iframe>');
         } else {
                 chat.html('<div style="display: none;">'+id+'</div>');
         }     
