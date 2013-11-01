@@ -8,42 +8,29 @@
         <meta name="description" content="Multimedia, video y audio" />
         <meta name="author" content="Ernesto Bazzano (c) HackLab de Barracas" />
 
-	<link rel="icon" href="/favicon.png" />
-        <link href="http://lab.hackcoop.com.ar/projects/juan-carlos-radio/activity.atom?show_wiki_edits=1" rel="alternate" title="ATOM" type="application/atom+xml" />
+	<link rel="icon" href="/icecast.png" />
+    <link href="http://lab.hackcoop.com.ar/projects/juan-carlos-radio/activity.atom?show_wiki_edits=1" rel="alternate" title="ATOM" type="application/atom+xml" />
 
-        <link rel="stylesheet" type="text/css" href="assets/css/site.css" />
-        <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
-        <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" />
-
-        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="assets/css/video-default.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/site.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
+    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" />
 
 	<script type="text/javascript" src="assets/js/jquery.video-ui.js"></script>
-	<script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-1.7.1.js"></script>
+	<script type="text/javascript" src="js/icecast.js"></script>
+	<script type="text/javascript" >
+		video = [];
+	</script>
 
-<!--
-<script src="assets/js/underscore.min.js"></script>
-<script src="assets/js/backbone.min.js"></script>
-<script src="assets/js/prettify.min.js"></script>
--->
-
-<script type="text/javascript" src="js/icecast.js"></script>
-<script type="text/javascript" >
-video = [];
-</script>
-
-<!-- Add fancyBox -->
-<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
+	<!-- Add fancyBox -->
+	<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
 
 
-<!--[if IE ]>
-<![endif]-->
-
-<style>
-video, .mv-player {
-        background: url(poster/404.png);
-}
-</style>
+	<style>
+	video, .mv-player {
+	        background: url(poster/404.png);
+	}
+	</style>
 </head>
 
 
@@ -252,9 +239,9 @@ video, .mv-player {
 
         </div>
 </footer>
-<!--
-<script type="text/javascript" src="js/kaltura.js"></script>
--->
+<!--[if IE ]>
+	<script type="text/javascript" src="js/kaltura.js"></script>
+<![endif]-->
 </div>
 </body>
 </html>
