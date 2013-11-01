@@ -252,8 +252,8 @@ video, .mv-player {
 
         </div>
 </footer>
-<script type="text/javascript" src="js/kaltura.js"></script>
 <!--
+<script type="text/javascript" src="js/kaltura.js"></script>
 -->
 </div>
 </body>

@@ -1,7 +1,8 @@
 //direcciones
-irc="irc.bazza.com.ar";
+irc="irc.hackcoop.com.ar";
 icecast=window.location.port;
 host=window.location.host.replace(":"+icecast, "");
+
 
 function CrearChat (id){
         // pone le iframe que tiene el chat
