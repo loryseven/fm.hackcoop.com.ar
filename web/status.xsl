@@ -219,7 +219,7 @@
                         </p>
                            <ul class="icons">
                                 <li><i class="icon-envelope"></i><a href="http://listas.hackcoop.com.ar/listinfo/jcr">Lista de correos</a></li>  
-                                <li><i class="icon-file"></i> <a href="http://wiki.hackcoop.com.ar/Categoría:Juan_Carlos_Radio">Documentación</a></li>
+                                <li><i class="icon-file"></i> <a href="http://juancarlosradio.hackcoop.com.ar/">Documentación</a></li>
                                 <li><i class="icon-briefcase"></i> <a href="https://github.com/b4zz4/fm.hackcoop.com.ar">Desarrollo</a></li>
                            </ul>
                 </div>
@@ -227,10 +227,8 @@
                         <h3>Versión 0.1</h3>
                            <ul class="icons">
                                 <li><i class="icon-info-sign"></i> <a href="http://www.icecast.org/docs/icecast-trunk/"><xsl:value-of select="server_id" /></a></li>
-<!--
                                 <li><i class="icon-globe" ></i> <xsl:value-of select="location" /></li>
                                 <li><i class="icon-envelope"></i> <xsl:value-of select="admin" /></li>
--->
                                 <li><i class="icon-hdd"></i> <a href="http://archive.org">Web Archive</a></li>
                            </ul>
                 </div>
