@@ -214,21 +214,19 @@
                 <div class="span8">
                         <h3>Juan Carlos Radio</h3>
                         <p>
-                        Es un sistema operativo <b>GNU/Linux</b> y/o un conjunto de programas 
-                        <br />y configuraciones dedicados a la trasmisión de audio y video en linea.
+                        Es un conjunto de programas y configuraciones para <b>GNU</b> <br />
+			dedicados a la trasmisión de audio y video en linea.
                         </p>
+			<p>
+			Esta es su versión de <i class="icon-info-sign"></i> <a href="http://www.icecast.org/docs/icecast-trunk/"><xsl:value-of select="server_id" /></a>
+			</p>
+                </div>
+                <div class="span4">
+                        <h3>Versión 0.1.1</h3>
                            <ul class="icons">
                                 <li><i class="icon-envelope"></i><a href="http://listas.hackcoop.com.ar/listinfo/jcr">Lista de correos</a></li>  
                                 <li><i class="icon-file"></i> <a href="http://juancarlosradio.hackcoop.com.ar/">Documentación</a></li>
                                 <li><i class="icon-briefcase"></i> <a href="https://github.com/b4zz4/fm.hackcoop.com.ar">Desarrollo</a></li>
-                           </ul>
-                </div>
-                <div class="span4">
-                        <h3>Versión 0.1</h3>
-                           <ul class="icons">
-                                <li><i class="icon-info-sign"></i> <a href="http://www.icecast.org/docs/icecast-trunk/"><xsl:value-of select="server_id" /></a></li>
-                                <li><i class="icon-globe" ></i> <xsl:value-of select="location" /></li>
-                                <li><i class="icon-envelope"></i> <xsl:value-of select="admin" /></li>
                                 <li><i class="icon-hdd"></i> <a href="http://archive.org">Web Archive</a></li>
                            </ul>
                 </div>

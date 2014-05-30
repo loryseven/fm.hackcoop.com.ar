@@ -42,6 +42,34 @@ Puede ocurrir que durante microcortes se generen pequeños archivos que hay que 
 
 En este caso es una dirección dentro de [LibreVPN](http://librevpn.org.ar), pero podes poner lo que se te ocurra.
 
+Reparando icecast
+-----------------
+
+Icecast muchas veces no identifica las salidas con el mimetype adecuado, y conserva cache en el navegador, esto lo reparamos usando esta configuracion de Nginx.
+
+En `fm.hackcoop.com.ar.conf` ponemos:
+
+~~~
+server {
+  server_name fm.hackcoop.com.ar;
+  include "snippets/icecast.conf";
+}
+~~~
+
+En `snippets/icecast.conf` ponemos:
+
+~~~
+index status.xsl;
+
+location / {
+  proxy_pass http://localhost:8000;
+  proxy_buffering off;
+  chunked_transfer_encoding off;
+}
+~~~
+
+Más detales en [nginx-hackcoop.git](http://repo.hackcoop.com.ar/nginx-hackcoop.git)
+
 Quehaceres
 ----------
 
