@@ -26,8 +26,8 @@ Al terminar cada emisión de radio se hace un archivo del programa y [se compart
 ~~~
 <mount>
    <mount-name>/Realaradio.ogg</mount-name>
-   <dump-file\>.local/share/icecast2/web/archivo/Realaradio.ogg</dump-file>
-   <on-disconnect\>.local/share/icecast2/bin/archivar</on-disconnect>
+   <dump-file>.local/share/icecast2/web/archivo/Realaradio.ogg</dump-file>
+   <on-disconnect>.local/share/icecast2/bin/archivar</on-disconnect>
 </mount>
 ~~~
 
