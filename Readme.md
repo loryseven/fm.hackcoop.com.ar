@@ -24,11 +24,11 @@ Icecast.xml
 Al terminar cada emisión de radio se hace un archivo del programa y [se comparte](http://fm.hackcoop.com.ar/archive.org.xsl#Realaradio) en Archive.org
 
 ~~~
-&lt;mount&gt;
-   &lt;mount-name&gt;/Realaradio.ogg&lt;/mount-name&gt;
-   &lt;dump-file\&gt;.local/share/icecast2/web/archivo/Realaradio.ogg&lt;/dump-file&gt;
-   &lt;on-disconnect\&gt;.local/share/icecast2/bin/archivar&lt;/on-disconnect&gt;
-&lt;/mount&gt;
+<mount>
+   <mount-name>/Realaradio.ogg</mount-name>
+   <dump-file\>.local/share/icecast2/web/archivo/Realaradio.ogg</dump-file>
+   <on-disconnect\>.local/share/icecast2/bin/archivar</on-disconnect>
+</mount>
 ~~~
 
 En el ejemplo la estación de radio `/Realaradio.ogg` tiene que cambiar por tu punto de montaje. 
@@ -37,7 +37,7 @@ Puede ocurrir que durante microcortes se generen pequeños archivos que hay que 
 ### Nombre del que mantiene el icecast
 
 ~~~
-&lt;admin&gt;moteado@anastasia.local&lt;/admin&gt;
+<admin>moteado@anastasia.local</admin>
 ~~~
 
 En este caso es una dirección dentro de [LibreVPN](http://librevpn.org.ar), pero podes poner lo que se te ocurra.
