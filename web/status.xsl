@@ -3,13 +3,13 @@
 <xsl:template match = "/icestats" >
 <html lang="es">
 <head>
-        <meta charset="utf-8" />
-        <title>Juan Carlos Radio - Transmisiones</title>
-        <meta name="description" content="Multimedia, video y audio" />
-        <meta name="author" content="Ernesto Bazzano (c) HackLab de Barracas" />
+    <meta charset="utf-8" />
+    <title>Juan Carlos Radio - Transmisiones</title>
+    <meta name="description" content="Multimedia, video y audio" />
+    <meta name="author" content="Ernesto Bazzano (c) HackLab de Barracas" />
 
-	<link rel="icon" href="icecast.png" />
-    <link href="http://lab.hackcoop.com.ar/projects/juan-carlos-radio/activity.atom?show_wiki_edits=1" rel="alternate" title="ATOM" type="application/atom+xml" />
+    <link rel="icon" href="icecast.png" />
+    <link href="https://archive.org/advancedsearch.php?q=juan%2Bcarlos%2Bradio&fl[]=identifier&sort[]=&sort[]=&sort[]=&rows=50&page=1&callback=callback&output=rss" rel="alternate" title="ATOM" type="application/atom+xml" />
 
     <link rel="stylesheet" type="text/css" href="assets/css/site.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
