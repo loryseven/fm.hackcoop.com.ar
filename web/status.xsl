@@ -201,7 +201,7 @@
         </xsl:otherwise>
 </xsl:choose>
 </xsl:for-each>
-<xsl:text disable-output-escaping="yes"></xsl:text>
+<xsl:text disable-output-escaping="yes">Lo siento en este momento no estamos transmitiendo, proba de nuevo...</xsl:text>
 
            <form method="get" action="archive.org.xsl" >
                 <div class="input-prepend pull-right">
