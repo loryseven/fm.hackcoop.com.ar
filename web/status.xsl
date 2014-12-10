@@ -10,25 +10,19 @@
 
     <link rel="icon" href="icecast.png" />
     <link href="https://archive.org/advancedsearch.php?q=juan%2Bcarlos%2Bradio&fl[]=identifier&sort[]=&sort[]=&sort[]=&rows=50&page=1&callback=callback&output=rss" rel="alternate" title="ATOM" type="application/atom+xml" />
-
+<!--css-->
     <link rel="stylesheet" type="text/css" href="assets/css/site.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
-    <link rel="stylesheet" href="assets/js/jquery-1.7.1.min.js" />
     <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" />
-	<script type="text/javascript" src="assets/js/icecast.js"></script>
-	<script type="text/javascript" >
-		video = [];
-	</script>
-
-	<!-- Add fancyBox -->
-	<script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
-
-
+<!--javascript-->
+    <link rel="stylesheet" href="assets/js/jquery-1.7.1.min.js" />
+<!--style-->
 	<style>
 	video, .mv-player {
 	        background: url(assets/img/poster/404.png);
 	}
 	</style>
+
 </head>
 
 
@@ -239,6 +233,19 @@
 	<script type="text/javascript" src="assets/js/kaltura.js"></script>
 <![endif]-->
 </div>
+
+<!--javascript luego de la carga-->
+
+	<script type="text/javascript" src="assets/js/icecast.js"></script>
+	<script type="text/javascript" >
+		video = [];
+	</script>
+
+	<!-- Add fancyBox -->
+	<script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
+
+
+
 </body>
 </html>
 </xsl:template>
