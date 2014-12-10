@@ -61,7 +61,7 @@
   <a href="http://hackcoop.com.ar/listas/invita.html" class="popup fancybox.iframe btn btn-mini" ><i class="icon-comment"></i> invitalos </a>
 	</div>
         <div class="span1">
-                <a href="donaciones.xsl#{@mount}" class="popup fancybox.ajax btn btn-success btn-large" >
+                <a href="http://wiki.hackcoop.com.ar/Donaciones" class="popup fancybox.ajax btn btn-success btn-large" >
                         <i class="icon-heart"></i> Donación
                 </a>
 	</div>
@@ -217,6 +217,9 @@
                         Es un conjunto de programas y configuraciones para <b>GNU</b> <br />
 			dedicados a la trasmisión de audio y video en linea.
                         </p>
+			<p>
+			Para más seguridad e intimidad podes usar nuestro <a href="http://3vxmucb43bs4lert.onion">servicio oculto</a>
+			</p>
 			<p>
 			Esta es su versión de <i class="icon-info-sign"></i> <a href="http://www.icecast.org/docs/icecast-trunk/"><xsl:value-of select="server_id" /></a>
 			</p>
