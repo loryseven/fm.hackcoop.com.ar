@@ -1,7 +1,7 @@
 <html>
 <head>
-<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
-<script type="text/javascript" src="js/jquery.playlist.js"></script>
+<script type="text/javascript" src="assets/js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="assets/js/jquery.playlist.js"></script>
 <script src="http://html5.kaltura.org/js"></script>
 </head>
 <body>

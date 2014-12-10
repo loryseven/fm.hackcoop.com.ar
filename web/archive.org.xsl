@@ -12,9 +12,8 @@
 
         <link rel="stylesheet" type="text/css" href="assets/css/site.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
-        <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" />
+        <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" />
         <script src="assets/js/jquery-1.7.1.min.js"></script>
-        <script src="js/icecast.js"></script>
 </head>
 <body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
 
@@ -107,7 +106,8 @@
 
 </footer>
 </div>
-        <script src="js/archive.org.js"></script>
+        <script src="assets/js/icecast.js"></script>
+        <script src="assets/js/archive.org.js"></script>
 </body>
 </html>
 </xsl:template>

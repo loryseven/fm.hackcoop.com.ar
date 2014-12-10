@@ -13,20 +13,20 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/site.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
-    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" />
-	<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
-	<script type="text/javascript" src="js/icecast.js"></script>
+    <link rel="stylesheet" href="assets/js/jquery-1.7.1.min.js" />
+    <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" />
+	<script type="text/javascript" src="assets/js/icecast.js"></script>
 	<script type="text/javascript" >
 		video = [];
 	</script>
 
 	<!-- Add fancyBox -->
-	<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
+	<script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
 
 
 	<style>
 	video, .mv-player {
-	        background: url(poster/404.png);
+	        background: url(assets/img/poster/404.png);
 	}
 	</style>
 </head>
@@ -121,7 +121,7 @@
                 <!-- http://www.w3schools.com/html5/html5_ref_eventattributes.asp -->
                 <!-- el evento onoffline levanta la recepcion si se cae -->
 		<div class="videoUiWrapper thumbnail" >
-				<video src="{@mount}" controls="controls" width="400" height="300" autobuffer="autobuffer" type="application/ogg" poster="poster{@mount}.png"></video>
+				<video src="{@mount}" controls="controls" width="400" height="300" autobuffer="autobuffer" type="application/ogg" poster="assets/img/poster{@mount}.png"></video>
 		</div>
            <div class="icons btn-group" style="font-size: 16px;" >
                 <!-- chat y sociales -->
@@ -221,23 +221,22 @@
 			Para más seguridad e intimidad podes usar nuestro <a href="http://3vxmucb43bs4lert.onion">servicio oculto</a>
 			</p>
 			<p>
-			Esta es su versión de <i class="icon-info-sign"></i> <a href="http://www.icecast.org/docs/icecast-trunk/"><xsl:value-of select="server_id" /></a>
+			Esta es su versión de <a href="https://github.com/b4zz4/fm.hackcoop.com.ar"><xsl:value-of select="server_id" /></a>
 			</p>
                 </div>
                 <div class="span4">
-                        <h3>Versión 0.1.1</h3>
+                        <h3>Versión 0.1.2</h3>
                            <ul class="icons">
                                 <li><i class="icon-envelope"></i><a href="http://listas.hackcoop.com.ar/listinfo/jcr">Lista de correos</a></li>  
                                 <li><i class="icon-file"></i> <a href="http://juancarlosradio.hackcoop.com.ar/">Documentación</a></li>
-                                <li><i class="icon-briefcase"></i> <a href="https://github.com/b4zz4/fm.hackcoop.com.ar">Desarrollo</a></li>
-                                <li><i class="icon-hdd"></i> <a href="http://archive.org">Web Archive</a></li>
+                                <li><i class="icon-hdd"></i> <a href="https://archive.org">Web Archive</a></li>
                            </ul>
                 </div>
 
         </div>
 </footer>
 <!--[if IE ]>
-	<script type="text/javascript" src="js/kaltura.js"></script>
+	<script type="text/javascript" src="assets/js/kaltura.js"></script>
 <![endif]-->
 </div>
 </body>
