@@ -7,27 +7,21 @@
     <title>Juan Carlos Radio - Transmisiones</title>
     <meta name="description" content="Multimedia, video y audio" />
     <meta name="author" content="Ernesto Bazzano (c) HackLab de Barracas" />
-
     <link rel="icon" href="icecast.png" />
     <link href="/rss.xsl" rel="alternate" title="RSS" type="application/rss+xml" />
     <link rel="stylesheet" type="text/css" href="assets/css/site.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
     <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" />
-
     <script type="text/javascript" src="assets/js/jquery-1.7.1.min.js"></script>
     <style>
 	video, .mv-player {
 	        background: url(assets/img/poster/404.png);
 	}
     </style>
-
 </head>
-
-
 <body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
 <!--for navigation-->
 <div id="overview"></div>
-
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
@@ -117,16 +111,9 @@
 		</div>
            <div class="icons btn-group" style="font-size: 16px;" >
                 <!-- chat y sociales -->
-
-
                 <a href="#" class="btn btn-link" onclick="CrearChat('{@mount}'); return false;" >
                         <i class="icon-comments-alt"></i> Chat
                 </a>
-<!--
-                <a href="#" class="btn" onclick="Comentario('{@mount}'); return false;">
-                        <i class="icon-pencil"></i> Comentario
-                </a>
--->
                 <a href="#{@mount}" class="btn btn-link" onclick="alert(window.location.href+'#{@mount}');" >
                         <i class="icon-group"></i> Compartir
                 </a>
@@ -231,17 +218,11 @@
 	<script type="text/javascript" src="assets/js/kaltura.js"></script>
 <![endif]-->
 </div>
-
-<!--javascript luego de la carga-->
-
 	<script type="text/javascript" src="assets/js/icecast.js"></script>
 	<script type="text/javascript" >
 		video = [];
 	</script>
-
-	<!-- Add fancyBox -->
 	<script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
-
 </body>
 </html>
 </xsl:template>
