@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
     <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" />
 <!--javascript-->
-    <link rel="stylesheet" href="assets/js/jquery-1.7.1.min.js" />
+    <script type="text/javascript" src="assets/js/jquery-1.7.1.min.js"></script>
 <!--style-->
 	<style>
 	video, .mv-player {
@@ -243,8 +243,6 @@
 
 	<!-- Add fancyBox -->
 	<script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
-
-
 
 </body>
 </html>
