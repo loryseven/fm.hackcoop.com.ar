@@ -10,18 +10,16 @@
 
     <link rel="icon" href="icecast.png" />
     <link href="https://archive.org/advancedsearch.php?q=juan%2Bcarlos%2Bradio&fl[]=identifier&sort[]=&sort[]=&sort[]=&rows=50&page=1&callback=callback&output=rss" rel="alternate" title="ATOM" type="application/atom+xml" />
-<!--css-->
     <link rel="stylesheet" type="text/css" href="assets/css/site.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
     <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" />
-<!--javascript-->
+
     <script type="text/javascript" src="assets/js/jquery-1.7.1.min.js"></script>
-<!--style-->
-	<style>
+    <style>
 	video, .mv-player {
 	        background: url(assets/img/poster/404.png);
 	}
-	</style>
+    </style>
 
 </head>
 
