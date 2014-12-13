@@ -49,10 +49,10 @@
         <div class="span10">
           <h3>¡Contale a tus amigos!</h3>
           Ayudanos a difundir nuestros eventos por correo electrónico
-          <a href="http://hackcoop.com.ar/listas/invita.html" class="popup fancybox.iframe btn btn-mini" ><i class="icon-comment"></i> difundilo </a>
+          <a href="http://hackcoop.com.ar/listas/invita.html" class="popup btn btn-mini" ><i class="icon-comment"></i> difundilo </a>
         </div>
         <div class="span1">
-          <a href="http://wiki.hackcoop.com.ar/Donaciones#Donaciones" class="popup fancybox.iframe btn btn-success btn-large" >
+          <a href="http://wiki.hackcoop.com.ar/Donaciones#Hardware" class="popup fancybox.iframe btn btn-success btn-large" >
           <i class="icon-heart"></i> Donación
           </a>
         </div>
