@@ -31,9 +31,9 @@
         <div class="navbar-inner">
         <div class="container">
           <h3><a class="brand" href="status.xsl"><i class="icon-cloud"></i> Juan Carlos Radio</a></h3>
-          <ul class="nav pull-right">
+          <!-- <ul class="nav pull-right">
             <li><a class="nav" href="admin/">Administración <i class="icon-cogs"></i></a></li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
@@ -42,22 +42,6 @@
     <!--mount point stats-->
 
     <div class="container" id="contenido">
-
-    <!-- Invita -->
-    <div class="alert alert-info">
-      <div class="row">
-        <div class="span10">
-          <h3>¡Contale a tus amigos!</h3>
-          Ayudanos a difundir nuestros eventos por correo electrónico
-          <a href="http://hackcoop.com.ar/listas/invita.html" class="popup btn btn-mini" ><i class="icon-comment"></i> difundilo </a>
-        </div>
-        <div class="span1">
-          <a href="http://wiki.hackcoop.com.ar/Donaciones#Hardware" class="popup fancybox.iframe btn btn-success btn-large" >
-          <i class="icon-heart"></i> Donación
-          </a>
-        </div>
-      </div>
-    </div>
 
     <form method="get" action="archive.org.xsl" >
       <div class="input-prepend pull-right">
@@ -201,7 +185,7 @@
     dedicados a la trasmisión de audio y video en linea.
     </p>
     <p>
-    Para más seguridad e intimidad podes usar nuestro <a href="http://3vxmucb43bs4lert.onion">servicio oculto</a>
+    Para más seguridad e intimidad podes usar nuestro <a href="http://3vxmucb43bs4lert.onion.to">servicio oculto</a>
     </p>
     <p>
     Esta es su versión de <a href="https://github.com/b4zz4/fm.hackcoop.com.ar"><xsl:value-of select="server_id" /></a>
