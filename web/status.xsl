@@ -175,18 +175,15 @@
     <div class="span8">
     <h3>Juan Carlos Radio</h3>
     <p>
-    Es un conjunto de programas y configuraciones para <b>GNU</b> <br />
+    Es un conjunto de programas y configuraciones de <a herf="http://wiki.hackcoop.com.ar/Software_libre">software libre</a><br />
     dedicados a la trasmisión de audio y video en linea.
     </p>
     <p>
     Para más seguridad e intimidad podes usar nuestro <a href="http://3vxmucb43bs4lert.onion.to">servicio oculto</a>
     </p>
-    <p>
-    Versión de <xsl:value-of select="server_id" />
-    </p>
     </div>
     <div class="span4">
-    <h3><a href="https://github.com/b4zz4/fm.hackcoop.com.ar">Versión 0.1.3</a></h3>
+    <h3>Versión <a href="https://github.com/b4zz4/fm.hackcoop.com.ar">0.1.3</a> / <xsl:value-of select="server_id" /></h3>
     <ul class="icons">
     <li><i class="icon-envelope"></i><a href="http://listas.hackcoop.com.ar/listinfo/jcr">Lista de correos</a></li>
     <li><i class="icon-file"></i> <a href="http://juancarlosradio.hackcoop.com.ar/">Documentación</a></li>
