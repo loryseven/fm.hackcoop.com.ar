@@ -34,11 +34,8 @@
         <div class="navbar-inner">
         <div class="container">
           <h3><a class="brand" href="status.xsl"><i class="icon-cloud"></i> Juan Carlos Radio</a></h3>
-          <!-- <ul class="nav pull-right">
-            <li><a class="nav" href="admin/">Administración <i class="icon-cogs"></i></a></li>
-          </ul> -->
         </div>
-      </div>
+	</div>
     </div>
 
     <!--end index header menu -->
