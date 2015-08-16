@@ -22,7 +22,7 @@
       video, .mv-player {
         background: url(assets/img/poster/404.png);
       }
-      tor2web-header {
+      #tor2web-header {
 	display: none;
       }
     </style>
