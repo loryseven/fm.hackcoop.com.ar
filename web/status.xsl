@@ -169,13 +169,6 @@
     </xsl:choose>
     </xsl:for-each>
     <xsl:text disable-output-escaping="yes"></xsl:text>
-
-    <form method="get" action="archive.org.xsl" >
-    <div class="input-prepend pull-right">
-    <span class="add-on"><i class="icon-search"></i></span>
-    <input class="span2" type="search" name="q" id="q" placeholder="Buscar" />
-    </div>
-    </form>
     <footer>
     <div class="row">
     <div class="span8">
