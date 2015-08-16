@@ -24,7 +24,7 @@
       }
       tor2web-header {
 	display: none;
-	}
+      }
     </style>
   </head>
   <body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
@@ -62,6 +62,7 @@
 
     <div id="compartir{@mount}" style="display: none; width:500px;">
       <h2>enlace: http://fm.hackcoop.com.ar/#{@mount}</h2>
+	<!-- falta embed -->
     </div>
 
     <!-- contenido -->
@@ -181,11 +182,11 @@
     Para más seguridad e intimidad podes usar nuestro <a href="http://3vxmucb43bs4lert.onion.to">servicio oculto</a>
     </p>
     <p>
-    Esta es su versión de <a href="https://github.com/b4zz4/fm.hackcoop.com.ar"><xsl:value-of select="server_id" /></a>
+    Versión de <xsl:value-of select="server_id" />
     </p>
     </div>
     <div class="span4">
-    <h3>Versión 0.1.2</h3>
+    <h3><a href="https://github.com/b4zz4/fm.hackcoop.com.ar">Versión 0.1.3</a></h3>
     <ul class="icons">
     <li><i class="icon-envelope"></i><a href="http://listas.hackcoop.com.ar/listinfo/jcr">Lista de correos</a></li>
     <li><i class="icon-file"></i> <a href="http://juancarlosradio.hackcoop.com.ar/">Documentación</a></li>
